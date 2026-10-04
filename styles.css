@@ -123,6 +123,11 @@ figure { margin: 0; }
 }
 .steps p { margin-top: .3rem; }
 
+.class { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr)); gap: 2rem clamp(2rem, 6vw, 5rem); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.when { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; color: var(--cream); }
+.time { margin-top: .4rem; font-size: 1.25rem; color: var(--cream); }
+.class .btn { margin-top: 1.75rem; }
+
 .role { color: var(--cream); font-weight: 400; font-size: .95rem; margin-bottom: 1.25rem; }
 
 .contact { display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -138,6 +143,8 @@ figure { margin: 0; }
   transition: border-color .2s;
 }
 .mail:hover { border-color: var(--cream); }
+.phone { margin-top: 1.5rem; font-size: 1.2rem; font-weight: 400; letter-spacing: .05em; text-decoration: none; color: var(--muted); }
+.phone:hover { color: var(--cream); }
 
 .footer {
   border-top: 1px solid var(--line);
@@ -146,7 +153,7 @@ figure { margin: 0; }
 }
 .fine { max-width: 38rem; margin: .9rem auto 0; font-size: .78rem; opacity: .8; }
 
-@media (max-width: 40rem) {
+@media (max-width: 46rem) {
   .nav nav a:not(.nav-cta) { display: none; }
 }
 
