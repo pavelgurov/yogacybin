@@ -89,3 +89,14 @@ details > div { padding: 0 0 1.25rem; }
   details > div { display: block; }
   body { background: #fff; color: #000; }
 }
+
+.toc { margin-top: 1rem !important; font-size: .9rem; }
+.toc a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+.toc a:hover { color: var(--cream); }
+.before { padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--line); }
+.js:not(.show-all) .before { display: none; }
+.js:not(.show-all) .before.on { display: block; }
+.check { list-style: none; padding-left: 0 !important; }
+.check li { position: relative; padding-left: 1.7rem; }
+.check li::before { content: ""; position: absolute; left: 0; top: .35em; width: .85rem; height: .85rem; border: 1px solid var(--cream); border-radius: .2rem; }
+details h4 { font-size: 1rem; font-weight: 500; color: var(--cream); margin: 1.25rem 0 .4rem; }

@@ -2,6 +2,7 @@
 (function () {
   var root = document.documentElement;
   var days = document.querySelectorAll('.day');
+  var before = document.querySelector('.before');
   var links = document.querySelectorAll('.daynav a');
   var prev = document.getElementById('prev');
   var next = document.getElementById('next');
@@ -16,6 +17,7 @@
   function show(n, scroll) {
     current = Math.min(Math.max(n, 1), days.length);
     days.forEach(function (d) { d.classList.toggle('on', +d.dataset.day === current); });
+    if (before) before.classList.toggle('on', current === 1);
     links.forEach(function (a) {
       var on = +a.dataset.day === current;
       a.classList.toggle('on', on);
