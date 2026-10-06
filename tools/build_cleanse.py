@@ -153,7 +153,7 @@ for _d in range(11, 16):
     FALL_PHASE[_d] = 'Rebuild'
 
 FALL_TITLE = {1: 'The cleanse begins', 2: 'Let go of more', 3: 'Lighter still', 4: 'Simple and clean',
-              5: 'Restorative evening', 6: 'One meal', 7: 'Deep cleanse begins', 8: 'Fast', 9: 'Fast',
+              5: 'Early night', 6: 'One meal', 7: 'Deep cleanse begins', 8: 'Fast', 9: 'Fast',
               10: 'Break the fast', 11: 'Build back', 12: 'Rasayana begins', 13: 'Rest and rebuild',
               14: 'Almost there', 15: 'You made it'}
 
@@ -260,7 +260,7 @@ def fall_days():
 FALL_BEFORE = '''
     <section class="before" id="before">
       <p class="phase">Before Day 1</p>
-      <h2>Gather and prepare</h2>
+      <h2>Prepare</h2>
       <ul>
         <li><b>The three days before:</b> shop for supplies (see the <a href="#shopping">shopping list</a>), read this page, and prepare mentally. If you like, start cutting out the things that do not support you now.</li>
         <li><b>Tuesday class:</b> the evening class at Harmonist Sanctuary continues as usual throughout the cleanse; come if you can.</li>
