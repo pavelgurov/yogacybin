@@ -318,7 +318,7 @@ def guides(season):
 
     add('abhyanga', 'Abhyanga (oil massage)', 'Recommended · Every day',
         '<p>Self-massage with warm oil: anoint your sacred temple. Strongly recommended for everyone, especially with high Vata. Use sesame, almond or jojoba oil, or a dosha-specific oil. Do it in the morning or evening, classically before your bath or shower, or afterwards if you would rather keep oil out of the tub.</p>'
-        '<p>On the sweating days you can go deeper with castor oil before swedana, as described in ' + L('http://ayurveda.alandiashram.org/ayurvedic-healing/spring-self-care?rq=bath', 'this self-care guide') + '.</p>')
+        '<p>On the sweating days you can go deeper with castor oil before swedana, as described in ' + L('https://ayurveda.alandiashram.org/ayurvedic-healing/spring-self-care?rq=bath', 'this self-care guide') + '.</p>')
 
     add('garshana', 'Garshana (dry brushing)', 'Days 10–13' if spring else 'Days 6–10',
         '<p>Dry brushing exfoliates, moves lymph, reduces ama and improves circulation. Before your bath or shower, brush the dry skin to bring blood to the surface. You do not need silk gloves or a special brush: exfoliating gloves or a rough old towel work. A must if you have a lot of Kapha imbalance or ama; in that case follow it with abhyanga using a little castor oil.</p>'
@@ -331,11 +331,11 @@ def guides(season):
     add('triphala', 'Triphala', 'Days 7–10' if spring else 'Optional',
         ('<p>Taken as a tea 1 hour before bed on Days 7 to 10: 1 teaspoon of powder in 1 cup of water, or 2 tablets. Reduce the dose if you get diarrhea or cramping.</p>' if spring else
          '<p>A gentle herbal purgative, superb for Ayurvedic cleanses. If you use it, take it as a tea 1 hour before bed in the days before any basti: 1 teaspoon of powder in 1 cup of water, or 2 tablets. Reduce the dose if you get diarrhea or cramping.</p>')
-        + '<p>Available at Natural Grocers or from ' + L('https://www.banyanbotanicals.com/catalogsearch/result/?q=triphala', 'Banyan Botanicals') + '.</p>')
+        + '<p>Available at Natural Grocers or from ' + L('https://www.banyanbotanicals.com/search?q=triphala', 'Banyan Botanicals') + '.</p>')
 
     add('basti', 'Basti', 'Optional · ' + ('Days 12–16' if spring else 'Days 9–11'),
         '<p>A warm, oily, medicated enema, superb for releasing excess Vata from the lower body, especially aches in the legs, hips and low back. It is done after purgation (triphala). You can skip the medicated part (dashamula, or ten-roots tea) and use just warm water and sesame oil.</p>'
-        f'<p><b>{basti_when}</b> Take a probiotic food afterwards. Read the whole procedure before you begin, and the ' + L('https://www.ayurveda.com/resources/cleansing/basti', 'general information and contraindications') + '.</p>'
+        f'<p><b>{basti_when}</b> Take a probiotic food afterwards. Read the whole procedure before you begin, and the ' + L('https://ayurveda.com/blog/basti/', 'general information and contraindications') + '.</p>'
         '<h4>Prepare</h4>'
         + ol(['Eat kitchari for lunch. About an hour before sunset, instead of dinner, prepare the basti.',
               '<b>Dashamula tea:</b> boil 3 cups of pure water, add 2 tablespoons of dried dashamula, turn off the heat and steep for 10 minutes. Strain very well through a silk cloth or coffee filter; only the liquid goes in the bag.',
@@ -361,7 +361,7 @@ def guides(season):
         + ol(['Pour hot water over 10–12 almonds and soak them for several hours or overnight. Squeeze off the skins (optional, but easier to digest, especially for Vata).',
               'Blend the almonds with 1–2 pitted dates, 1 cup of milk or almond milk and a pinch of cardamom until slightly foamy.',
               'Optional: a pinch of dry ginger if digestion is sluggish, a very small pinch of saffron, or a pinch of ashwagandha or shatavari. Add turmeric and ginger to make it more like golden milk. Double it for two.'])
-        + '<h4>Chyavanprash</h4><p>A sweet, spicy herbal jam (it contains cane sugar), from ' + L('http://www.banyanbotanicals.com/chyavanprash-7/', 'Banyan Botanicals') + '. Blend a heaped teaspoon into warm milk until frothy.</p>'
+        + '<h4>Chyavanprash</h4><p>A sweet, spicy herbal jam (it contains cane sugar), from ' + L('https://www.banyanbotanicals.com/chyavanprash-7/', 'Banyan Botanicals') + '. Blend a heaped teaspoon into warm milk until frothy.</p>'
         '<h4>Golden milk</h4><p>Warm milk with turmeric, ginger and a pinch of black pepper is a perfectly good rasayana on its own.</p>')
 
     add('probiotics', 'Probiotics and savory lassi', 'Rebuild days',
@@ -396,7 +396,7 @@ def guides(season):
 
     add('more', 'More ideas', 'Optional',
         '<p>Clean a closet, wash out the fridge, pray before meals, create a bedtime ritual, journal, play an instrument, chant, practise japa, bathe with Epsom salts, make art, dance, plant seeds. What else?</p>'
-        '<p>Further reading: ' + L('http://ayurveda.alandiashram.org/ayurvedic-healing/digestive-enzymes', 'a word about digestive enzymes') + '.</p>')
+        '<p>Further reading: ' + L('https://ayurveda.alandiashram.org/ayurvedic-healing/digestive-enzymes', 'a word about digestive enzymes') + '.</p>')
     return '\n      '.join(g)
 
 
@@ -460,7 +460,7 @@ def food(season):
              'Turn off the heat and stir in 2 teaspoons coriander powder, 2 teaspoons turmeric, a small pinch of hing (asafoetida; skip if you have none) and a little freshly ground black pepper.',
              'Add the spices to the pot and keep cooking on medium-low, adding water as needed, until the grains are almost indistinguishable. The right consistency is like slightly thin oatmeal.',
              'Salt to taste at the end. Add more of any of the spices, or dry ginger, if you like it spicier.'])}
-        <p>If you would rather watch: {L('http://www.youtube.com/watch?v=JLJN6ENjGbc', 'a kitchari video')}, and {L('https://www.banyanbotanicals.com/info/ayurvedic-living/living-ayurveda/diet/how-to-make-kitchari/', 'Banyan’s extensive guide')}.</p>
+        <p>If you would rather watch: {L('https://www.youtube.com/watch?v=JLJN6ENjGbc', 'a kitchari video')}, and {L('https://www.banyanbotanicals.com/info/ayurvedic-living/living-ayurveda/diet/how-to-make-kitchari/', 'Banyan’s extensive guide')}.</p>
       </div></details>
       <h3 id="green-drink">Green drink</h3>
       <p>Cucumber, celery, apple, ginger, lemon or lime, and cilantro or parsley. Nothing frozen. “Chew” it rather than gulping it down.</p>
@@ -539,6 +539,7 @@ def page(slug, season, title, intro, phases, days, before='', routine_start=1):
   <title>{title} — YogaCybin</title>
   <meta name="description" content="Day-by-day guide for participants of the YogaCybin {title}.">
   <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'">
   <meta name="theme-color" content="#141413">
   <link rel="icon" href="../assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
