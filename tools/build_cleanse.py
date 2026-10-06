@@ -38,20 +38,19 @@ for _d in range(4, 10):
 for _d in range(14, 19):
     SPRING_PHASE[_d] = 'Rebuild'
 
-SPRING_TITLE = {1: 'Opening gathering', 2: 'Study and shop', 3: 'Study and shop', 4: 'The cleanse begins',
+SPRING_TITLE = {1: 'Read and prepare', 2: 'Study and shop', 3: 'Study and shop', 4: 'The cleanse begins',
                 5: 'Simplify', 6: 'Simplify further', 7: 'Kitchari for lunch', 8: 'One meal, if you choose',
                 9: 'One meal, if you choose', 10: 'Deep cleanse begins', 11: 'Deep cleanse', 12: 'Deep cleanse',
                 13: 'Break the fast', 14: 'Rasayana begins', 15: 'Widen the plate', 16: 'Two to three meals',
                 17: 'More variety', 18: 'Closing celebration'}
 
 SPRING_NOTE = {
-    1: 'We meet to walk through the program together. Pasha will send the time and place.',
+    1: 'Read through this page and start getting ready. The Tuesday evening class at Harmonist Sanctuary continues as usual throughout the cleanse; come if you can.',
     2: 'Read through this page, then shop for food and supplies. Start any of the daily practices now to get your mindset strong.',
     3: 'Read through this page, then shop for food and supplies. Start any of the daily practices now to get your mindset strong.',
     4: 'The formal cleanse starts today. In your morning practice, light a candle for everyone on the cleanse.',
-    10: 'Restorative yoga class today. Pasha will send the details.',
     12: 'It is fine to break your fast today if you are unwell.',
-    18: 'Our final meeting is today. Share and celebrate!',
+    18: 'You made it! Celebrate, and keep your diet and lifestyle this clean for as long as you can.',
 }
 
 _DEEP = [BF_NONE, 'Same as Day 9, <em>or</em> water fast.',
@@ -96,12 +95,10 @@ def spring_morning(d):
         o.append('If you oleate, do <a href="#agni-sara">Agni Sara</a> during sadhana.')
     if d == 8:
         o.append('No more oleation for the rest of the cleanse.')
-    if d == 10:
-        o.append('Sadhana: restorative yoga class.')
-    elif d in (11, 12):
+    if d in (11, 12):
         o.append('Sadhana: less asana, more meditation, pranayama, yoga nidra or legs up the wall.')
     elif d == 18:
-        o.append('Sadhana: your own practice, then final sharing with everyone.')
+        o.append(SADHANA)
     elif d >= 4:
         o.append(SADHANA)
     return o
@@ -162,10 +159,10 @@ FALL_TITLE = {1: 'The cleanse begins', 2: 'Let go of more', 3: 'Lighter still', 
 
 FALL_NOTE = {
     1: 'The cleanse officially starts today.',
-    5: 'Optional restorative yoga class this evening. Pasha will send the details. Afterwards go home and straight to bed.',
+    5: 'An early night tonight: straight to bed after dinner (or instead of it).',
     8: 'Do not spend the day working or socializing. Sadhana, ceremony, journaling, write a letter, walk or sit somewhere beautiful, practise silence, listen deeply inside and out.',
     9: 'Do not spend the day working or socializing. Sadhana, ceremony, journaling, write a letter, walk or sit somewhere beautiful, practise silence, listen deeply inside and out.',
-    15: 'You made it! We gather and share today. Keep your diet and lifestyle this clean for as long as you can.',
+    15: 'You made it! Celebrate, and keep your diet and lifestyle this clean for as long as you can.',
 }
 
 LIVER = 'Liver support: a glass of celery juice or a shot of cilantro juice, 30 minutes after a cup or two of lemon water.'
@@ -216,7 +213,7 @@ def fall_morning(d):
     if d in (8, 9):
         o.append('Sadhana: more meditation, pranayama and stillness than asana.')
     elif d == 15:
-        o.append('Sadhana: your own practice, then gather and share.')
+        o.append(SADHANA)
     else:
         o.append(SADHANA)
     return o
@@ -265,8 +262,8 @@ FALL_BEFORE = '''
       <p class="phase">Before Day 1</p>
       <h2>Gather and prepare</h2>
       <ul>
-        <li><b>Gathering:</b> we meet to walk through the program together. Pasha will send the time and place.</li>
         <li><b>The three days before:</b> shop for supplies (see the <a href="#shopping">shopping list</a>), read this page, and prepare mentally. If you like, start cutting out the things that do not support you now.</li>
+        <li><b>Tuesday class:</b> the evening class at Harmonist Sanctuary continues as usual throughout the cleanse; come if you can.</li>
       </ul>
     </section>
 '''
